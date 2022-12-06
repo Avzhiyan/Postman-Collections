@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "a6d20c35-616b-4c8b-86ae-a5cbc4f337dc",
+		"name": "Chack_Norris",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22194643"
+	},
+	"item": [
+		{
+			"name": "jokes_random",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.chucknorris.io/jokes/random",
+					"protocol": "https",
+					"host": [
+						"api",
+						"chucknorris",
+						"io"
+					],
+					"path": [
+						"jokes",
+						"random"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.chucknorris.io/jokes/categories",
+					"protocol": "https",
+					"host": [
+						"api",
+						"chucknorris",
+						"io"
+					],
+					"path": [
+						"jokes",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jokes_random_category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.chucknorris.io/jokes/random?category=animal",
+					"protocol": "https",
+					"host": [
+						"api",
+						"chucknorris",
+						"io"
+					],
+					"path": [
+						"jokes",
+						"random"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "animal"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.chucknorris.io/jokes/search?query=work",
+					"protocol": "https",
+					"host": [
+						"api",
+						"chucknorris",
+						"io"
+					],
+					"path": [
+						"jokes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "work"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

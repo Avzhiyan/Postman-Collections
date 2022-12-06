@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "d55a3128-9c5d-4744-baca-0769b0c4a2f9",
+		"name": "Imgflip",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22194643"
+	},
+	"item": [
+		{
+			"name": "get_memes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.Imgflip.com/get_memes",
+					"protocol": "https",
+					"host": [
+						"api",
+						"Imgflip",
+						"com"
+					],
+					"path": [
+						"get_memes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_meme",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://imgflip.com/caption_image?template_id=97984&username=atani86&password=Kt98tyaz&text0=TESTING&text1=API",
+					"protocol": "https",
+					"host": [
+						"imgflip",
+						"com"
+					],
+					"path": [
+						"caption_image"
+					],
+					"query": [
+						{
+							"key": "template_id",
+							"value": "97984"
+						},
+						{
+							"key": "username",
+							"value": "atani86"
+						},
+						{
+							"key": "password",
+							"value": "Kt98tyaz"
+						},
+						{
+							"key": "text0",
+							"value": "TESTING"
+						},
+						{
+							"key": "text1",
+							"value": "API"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
